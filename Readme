@@ -1,0 +1,24 @@
+It's simulating how a shared music streaming system works. Producers upload
+and delete songs from BST. All producers(threads) have access to the same tree 
+but controlled from pthreads library (barriers and locks).
+
+Features:
+
+- BST is implemented using fine grained synchronization algorithm
+- Simultaneously access to BST from all threads
+- Using barriers and locks to control them.
+- Usig unbounded Queues with locks
+
+Useful algorithms to use:
+
+- BST Search
+- BST Delete
+- BST Insert
+- Dequeue
+- Enqueue
+
+Running Instructions:
+
+- compile using "make all" command
+- then run command "./exec X" X=custom number of threads(producers to use)
+e.g ./exec 4
